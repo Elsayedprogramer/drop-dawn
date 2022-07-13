@@ -1,0 +1,104 @@
+.show_when_mobile {
+  display: block;
+  /* display: flex; */
+  /* align-items: center; */
+}
+.hide_when_mobile {
+  display: none;
+}
+/* =========================
+2. font aswom hamburger menu
+===========================*/
+input {
+  display: none;
+}
+.absolute {
+  position: absolute;
+  top: -5px;
+  right: 30px;
+}
+.fas {
+  position: absolute;
+  right: 10vw;
+}
+.fa-bars {
+  font-size: 30px;
+  transform: scaleX(1.5);
+  top: 5px;
+  right: 1vw;
+}
+/* =========================
+2.1 show on click
+===========================*/
+.shw_on_click {
+  display: none;
+  border-top: 2px solid black;
+}
+#burger:checked + .shw_on_click {
+  display: block;
+}
+label {
+  /* border: 2px solid red; */
+  font-size: 22px;
+  display: block;
+  padding: 20px;
+}
+.fa-bars:hover,
+label:hover,
+label:hover .fas,
+.sub_div li a:hover {
+  color: cyan;
+  letter-spacing: 2px;
+}
+.main_div {
+  border-bottom: 2px solid black;
+}
+/* =========================
+2.main_ul
+===========================*/
+/* =========================
+3.sub of div
+===========================*/
+.sub_div {
+  display: none;
+}
+.sub_div:hover{
+  opacity: 1;
+}
+.sub_div li a {
+  display: block;
+  padding: 0 10px;
+  opacity: 0.5;
+}
+.sub_div li a:hover{
+  opacity: 1;
+  transition: all .5s;
+}
+#html:checked + .sub_div,
+#css:checked + .sub_div,
+#JavaScript:checked + .sub_div {
+  display: block;
+}
+.sub_div li {
+  font-size: 17px;
+  padding: 10px 0 10px 10px;
+}
+/* =========================
+3.sub sub of div
+===========================*/
+.sub_sub_div {
+  display: none;
+  margin-top: 17px;
+}
+#mini:checked + .sub_sub_div {
+  display: block;
+}
+.mini_projects {
+  padding: 10px;
+  font-size: 17px;
+  opacity: 0.5;
+}
+.mini_projects:hover{
+  opacity: 1;
+  transition: all .5s;
+}
